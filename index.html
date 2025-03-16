@@ -14,11 +14,25 @@
        }
        body {
          background-color: #2168F2;
+         align-items: center;
        }
+        img {
+           width: 40%;
+           height: auto;
+        }
     </style>
+    <script>
+      const names = ["brysio.JPEG", "brysio_black.JPEG", "brysio_gray.JPEG", "brysio_gray_standing.JPEG", "brysio_peptunia.JPEG", "peptunia.JPEG", "peptunia_mini.JPEG", "pipek.JPEG"];
+      function getRandomImage() {
+            const randomIndex = Math.floor(Math.random() * names.length);
+            return names[randomIndex];
+      }
+      const randomImage = getRandomImage();
+      document.getElementById('randomImage').src = randomImage;
+    </script>
   <h1>Random plushie</h1>
 </head>
 <body>
-  
+  <img id="randomImage" alt="image could not load">
 </body>
 </html>
