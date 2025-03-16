@@ -21,7 +21,16 @@
            height: auto;
         }
     </style>
-    
+   <img id="randomImage" alt="Random Image" style="display: block; margin: auto; max-width: 100%; height: auto;">
+    <script>
+        const names = [
+            "brysio.JPEG", "brysio_black.JPEG", "brysio_gray.JPEG",
+            "brysio_gray_standing.JPEG", "brysio_peptunia.JPEG",
+            "peptunia.JPEG", "peptunia_mini.JPEG", "pipek.JPEG"
+        ];
+        
+        document.getElementById("randomImage").src = names[Math.floor(Math.random() * names.length)];
+    </script>
   <h1>Random plushie</h1>
 </head>
 <body>
